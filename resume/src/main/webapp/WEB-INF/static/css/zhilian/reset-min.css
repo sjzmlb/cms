@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+body,div,dl,dt,dd,ul,ol,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,table,th,td{font-family:"simsun";margin:0;padding:0}
+fieldset,img,abbr,acronym{border:none}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:400}
+em,i{font-style:normal}
+a{color:#315AAA; text-decoration:none;}
+a:hover{outline:none;}
+a,input:focus{outline:none}
+input{border:none;background:none;}
+button{border:none;vertical-align:middle;cursor:pointer}
+table{border-collapse:collapse;border-spacing:0;}
+address,caption,cite,code,dfn,th{font-weight:normal;font-style:normal;}
+ul,li{list-style:none;}
+a img, :link img, :visited img {border: 0;outline:none;}
+strong{ font-weight:normal;}
+/*clear,clearfix是清楚浮动的----clearfix用法是：给浮动元素的父级添加class="clearfix"，即可清楚子元素的浮动*/
+.clear{ clear:both;zoom:1;height:0;font-size: 1px;line-height: 0px;text-indent:-9999px;}
+.clearfix:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix {zoom:1;display:block;}
+.only_clear{ clear:both;}
+
+.font14{ font-size:14px;}
+.font16{ font-size:16px;}
+
+.mt10{ margin-top:10px;}
+.mt20{ margin-top:20px;}
+.mt30{ margin-top:30px;}
+.mr10{ margin-right:10px;}
+.mr20{ margin-right:20px;}
+.ml10{ margin-left:10px;}
+.ml20{ margin-left:20px;}
+.ml40{ margin-left:40px;}
+
+.fl{ float:left;}
+.fr{ float:right;}
+.vm{ vertical-align:middle;}
+.vt{ vertical-align:top;}
+.fwb{ font-weight:bold;}
+#guild,#guild div{font-family:Arial,"宋体" !important;}

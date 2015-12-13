@@ -1,0 +1,630 @@
+@charset "utf-8";
+.body { 
+		font-size: 12px;
+		text-decoration: none;
+		margin-left: 0px;
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		scrollbar-face-color: #C1C1C1;
+		scrollbar-highlight-color: #FFFFFF;
+		scrollbar-shadow-color: #f5f5f5;
+		scrollbar-3dlight-color: #333333;
+		scrollbar-arrow-color:  #666666;
+		scrollbar-track-color: #EFEFEF;
+		scrollbar-darkshadow-color: #333333;
+        background-color: #f5f5f5;
+}
+.DoubleColorTable tr{background-color:expression("#F5F5F5,#FFFFFF,".split(",")[rowIndex%2]);font-size: 12px;line-height:22px;border:0; cellpadding:2; cellspacing:1;}
+.DoubleColorTable1 tr{background-color:expression("#FFFFFF,#F5F5F5,".split(",")[rowIndex%2]);font-size: 12px;line-height:22px;border:0; cellpadding:2; cellspacing:1;}
+
+tbody tr:nth-child(odd) {
+        background-color: #F5F5F5;
+    }
+td {font-size: 12px;text-decoration: none;line-height:22px;}
+
+.bold{
+   font-size:12px;
+   color:#000000;
+   font-weight:bold;
+}
+
+a:link {font-size: 12px;color: #000000;	text-decoration: underline;}
+a:visited {	font-size: 12px;color: #000000;	text-decoration: underline;}
+a:hover {font-size: 12px;line-height: normal;color: #0033CC;text-decoration: underline;}
+
+/*带边框的表格*/
+.border_td{border:1px solid #cccccc;}
+
+/*浅蓝色的表格*/
+.blue_tr{font-size:12px;background-color:#D9E8FE}
+
+/*没有下划线的链接*/
+.new{
+	font-size:12px;
+	text-decoration: none;
+	color: #0033CC;
+
+}
+a.new:link {font-size: 12px;color: #0033CC;	text-decoration: none;line-height:normal;}
+a.new:visited {	font-size: 12px;color: #000000;	text-decoration: none;line-height:22px;}
+a.new:hover {font-size: 12px;line-height: normal;color: #0033CC;text-decoration: none;line-height:22px;}
+
+
+/* 输入框 */
+.input {font-size: 12px;border: 1px solid #666666;}
+.button {
+	font-size: 12px;
+	background-color: #ABCCFE;
+	border-top: 2px solid #6FC6FF;
+	border-right: 1px solid #9ECADA;
+	border-bottom: 1px solid #C4DEE8;
+	border-left: 1px solid #79AFBB;
+	margin-left:4px;
+	margin-right:4px;
+}
+
+/* 表格第一行的表头样式*/
+.navtittle {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	line-height:22px;
+	background-color: #7EAAEB;
+	padding-left:15px;
+}
+.navtittle1 {
+	font-size: 12px;
+	line-height:22px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+/* 注释部分的灰色样式 */
+.gray {font-size: 12px;color: #666666;line-height:22px;}
+
+/* ??????? */
+.red {font-size: 12px;color: #FF0000;line-height:22px;}
+
+/* label */
+.capa{
+     background-color:#D9E8FE;
+	 background-repeat:no-repeat;
+	 height:25px;
+     width:80px;
+	 color:#ffffff;
+	 font-weight:bold;
+}
+.capb{
+     background-color:#7EAAEB;
+	 background-repeat:no-repeat;
+	 height:25px;
+	 background-position:bottom;
+	 width:80px;
+}
+.cap2{
+     background-color:#7EAAEB;
+	 background-repeat:no-repeat;
+	 height:25px;
+     width:80px;
+	 padding-left:13px;
+}
+.cap4{
+     background-color:#D9E8FE;
+	 background-repeat:no-repeat;
+	 height:25px;
+	 background-position:bottom;
+	 width:80px;
+	 color:#ffffff;
+	 font-weight:bold;
+	 padding-left:13px;
+}
+.biaoqianbg{
+    background-color:#7EAAEB;
+	background-repeat:repeat-x;
+	height:25px;
+	max-height:21px;
+}
+
+.borderleft{
+   border-left:1px #ffffff solid;
+}
+.borderright{
+   border-right:1px #ffffff solid;
+}
+
+/*服务管理*/
+a.modify:link {font-size: 12px;color: #000000;	text-decoration: none;}
+a.modify:visited {	font-size: 12px;color: #000000;	text-decoration: none;}
+a.modify:hover {font-size: 12px;line-height: normal;color: #000000;text-decoration:none;}
+body {
+	font-size: 12px;
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	line-height:22px;
+	scrollbar-face-color: #C3DFFC;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-shadow-color: #DEE3E7;
+	scrollbar-3dlight-color: #D1D7DC;
+	scrollbar-arrow-color:  #006699;
+	scrollbar-track-color: #EFEFEF;
+	scrollbar-darkshadow-color: #98AAB1;
+}
+
+* {
+	font-size: 12px;
+}
+
+a:link {
+	font-size: 12px;color: #000000;	text-decoration: underline;line-height:22px;
+}
+a:visited {
+	font-size: 12px;color: #000000;	text-decoration: underline;line-height:22px;
+}
+a:hover{
+	font-size: 12px;line-height: normal;color: #0033CC;text-decoration: underline;line-height:22px;
+}
+
+form {
+	border:0px;
+	padding:0px;
+	margin:0px;
+}
+
+
+img {
+	vertical-align:middle;
+}
+
+/* 输入框 */
+.input {font-size: 12px;border: 1px solid #7F9DB9;}
+
+/* 注释部分的灰色样式 */
+.gray {font-size: 12px;color: #666666;line-height:22px;}
+
+/* 红色样式字体 */
+.red {font-size: 12px;color: #FF0000;line-height:22px;text-decoration: none;}
+
+/*没有下划线的文字*/
+.underline_no{text-decoration: none;}
+
+
+/*蓝色边框的表格样式 */
+.tableLine {
+	border:1px solid #CCCCCC;
+}
+
+/*深蓝色单元格样式 */
+.tableLineBg {
+	background-color:#7EAAEB;
+	font-weight:bold;
+	color:#fff;
+	padding-left:5px;
+	height:25px;
+}
+
+/*浅蓝色单元格样式 */
+
+.tableLineBge {
+	background-color:#D9E8FE;
+	height:25px;
+		text-align:center;
+}
+
+
+/** 交替显示颜色的表格 **/
+.DoubleColorTable tr{
+	background-color:expression("#F5F5F5,#FFFFFF,".split(",")[rowIndex%2]);
+	font-size: 12px;
+	line-height:25px;
+	border:0;
+	cellpadding:2;
+	cellspacing:1;
+	padding-left:5px;
+}
+
+/*翻页样式*/
+.page{
+	 margin-top:11px;
+ 	 margin-bottom:0px;
+	 color:#000000;
+	 font-size:12px;
+	 text-align:center;
+}
+a.page:link, a.page:link, a.page:visited, a.page:hover{
+    font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	margin:0 3px;
+	color:#000;
+	text-decoration:none;
+}
+a.page:hover{
+   font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000;
+	text-decoration:underline;
+}
+
+/*带边框的表格*/
+.tableLine {
+	border:1px solid #ccc;
+	width:100%;
+}
+
+/*不带上边框的表格*/
+.tableLineTop {
+	border:1px solid #ccc;
+	width:100%;
+}
+
+/*带灰边框的表格*/
+.tableLineGray {
+	border:1px solid #ccc;
+	width:100%;
+	color:#515151;
+	background-color:#FAFAFA;
+	margin-bottom:2px;
+}
+
+.tableLineGray td {
+	color:#fff;
+	text-align:center;
+}
+
+/*深灰色的背景*/
+.gray_bg{
+	font-size:12px;
+	background-color:#f5f5f5;
+	padding:10px 10px 0px 15px;
+}
+
+/*浅灰色左边线*/
+.gray_bg1{
+	font-size:12px;
+	background-color:#ffffff;
+	padding:10px 10px 0px 10px;
+	border-left: 1px solid #ccc;
+}
+
+/*浅灰色左边线*/
+.gray_bg2{
+	font-size:12px;
+	background-color:#fafafa;
+	padding:10px 10px 0px 10px;
+	border-right: 1px solid #ccc;
+
+}
+
+
+a:link {
+	font-size:12px;
+	color:#000000;
+	text-decoration:underline;
+}
+a:visited {
+	font-size:12px;
+	color:#000000;
+	text-decoration:underline;
+}
+a:hover {
+	font-size:12px;
+	color:#000000;
+	text-decoration:none;
+}
+a:active {
+	font-size:12px;
+	color:#000000;
+	text-decoration:underline;
+}
+#loadbar{
+	display:block;
+	}
+.bold {
+	font-weight:bold;
+}
+
+/* 共通用样式 */
+body{
+	margin:0;
+	padding:0;
+	color:#000000;
+	font-size:12px;
+	background-color:#F0F9FE;
+}
+html{
+	scrollbar-face-color: #ddeeff;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-shadow-color: #64B4ED;
+	scrollbar-3dlight-color: #64B4ED;
+	scrollbar-arrow-color: #64B4ED;
+	scrollbar-track-color: #EAF4FE;
+	scrollbar-darkshadow-color: #ffffff;
+}
+
+/* 网站文字链接样式 */
+a:link{
+	font-size:12px;
+	color:#000000;
+	text-decoration:underline;
+}
+a:visited{
+	font-size:12px;
+	color:#000000;
+	text-decoration:underline;
+}
+a:hover{
+	font-size:12px;
+	color:#0063dc;
+	text-decoration:none;
+}
+a:active{
+	font-size:12px;
+	color:#000000;
+	text-decoration:underline;
+}
+
+/* 无下划线的文字链接样式 */
+a.font:link{
+	font-size:12px;
+	color:#000000;
+	text-decoration:none;
+}
+a.font:visited{
+	font-size:12px;
+	color:#000000;
+	text-decoration:none;
+}
+a.font:hover{
+	font-size:12px;
+	color:#000000;
+	text-decoration:none;
+}
+a.font:active{
+	font-size:12px;
+	color:#000000;
+	text-decoration:none;
+}
+
+/* 蓝色文字链接样式 */
+a.blue:link{
+	font-size:12px;
+	color:#003399;
+	text-decoration:none;
+}
+a.blue:visited{
+	font-size:12px;
+	color:#003399;
+	text-decoration:none;
+}
+a.blue:hover{
+	font-size:12px;
+	color:#000000;
+	text-decoration:underline;
+}
+a.blue:active{
+	font-size:12px;
+	color:#003399;
+	text-decoration:none;
+}
+
+/* 文本加粗样式 */
+.font_bold{
+	color:#000000;
+	font-size:12px;
+	font-weight:bold;
+}
+
+/* 文本灰色样式 */
+.gray{
+	color:#666666;
+	font-size:12px;
+}
+
+/* 文本输入框样式 */
+.input{
+	border:1px solid #CCDCFE;
+	font-size:12px;
+	color:#000000;
+}
+.inputGray{
+	border:1px solid #CCDCFE;
+	font-size:12px;
+	color:#cccccc;
+}
+
+/* 多行文本输入框样式 */
+.textarea{
+	border:1px solid #CCDCFE;
+	font-size:12px;
+	color:#000000;
+}
+
+.input_checkbox{
+	border:0px;
+}
+
+/** 翻页样式 **/
+.page {
+	text-align:center;
+	margin:14px 0px 7px 0px;
+	width:97%;
+	height:28px;
+}
+.page_number {	
+	margin-right:5px;
+}
+.pageright{
+	float:right;
+}
+.pageCurrent{
+	background-color:#F4FDFF;
+	border:1px solid #0167CC;
+	padding:4px;
+	color:#0033CC;
+	font-weight:bold;
+	text-decoration:underline;
+}
+/** 翻页文字链接样式 **/
+.page_number a:link,.page_number a:active,.page_number a:visited{
+	font-size:12px;
+	color:#003399;
+	border:1px solid #fff;
+	padding:4px;
+	text-decoration:none;
+}
+
+.page_number a:hover {
+	font-size:12px;
+	color:#003399;
+	border:1px solid #003399;
+	padding:4px;
+	font-weight:bold;
+	background-color:#F4FDFF;
+	text-decoration:underline;
+}
+
+.page_next a:link,.page_next a:active,.page_next a:hover,.page_next a:visited {
+	color:#000;
+	text-decoration:underline;
+}
+
+.page_next a:hover {
+	color:#003399;
+	text-decoration:none;
+}
+/* 红色样式 */ 
+.red{
+	color:#ff0000;
+}
+
+/* 行高 */ 
+.lineHeight{
+	height:30px !important;
+	height:24px;
+	padding:5px 0px;
+} 
+.head_menu_blue{
+	font-size:14px;
+	font-weight:bold;
+	color:#305aae;
+	text-align:center;
+}
+
+a.head_menu_whitelink:link, a.head_menu_whitelink:active, a.head_menu_whitelink:visited, a.head_menu_whitelink:hover{
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#000;
+	star:expression(onfocus=function(){this.blur()});
+}
+a.head_menu_bluelink:link, a.head_menu_bluelink:active, a.head_menu_bluelink:visited, a.head_menu_bluelink:hover{
+	font-size:14px;
+	font-weight:bold;
+	color:#305aae;
+	text-decoration:none;
+	star:expression(onfocus=function(){this.blur()});
+}
+
+
+/* 搜索表格样式 */
+.search{
+	margin:0 0 15px 0;
+	border:1px solid #95BAE9;
+	background-color:#E1EEFE;
+	overflow:hidden;
+}
+.search table{
+	margin:1px;
+	width:99.7%;
+	background-color:#fff;
+}
+
+/* 信息样式 */
+.infoSpace{
+	margin:10px;
+	line-height:20px;
+}
+
+.contentTitle img{
+	margin:-1px;
+}
+.contentTitle h3{
+	margin:0;
+	padding:0;
+	font-size:12px;
+	font-weight:bold;
+	padding:3px 0px 0px 0px;
+}
+.contentList{
+	margin:1px;
+	width:99.5%;
+	background-color:#fff;
+}
+.contentList1{
+	background-color:#fff;
+	border:1px solid #ffffff;
+	width:100% !important;
+	width:97.6%;
+}
+.contentT{
+	border:1px solid #95BAE9;
+	background-color:#E1EEFE;
+	margin-top:12px;
+}
+/* 表格主体 */
+.contentModule{
+	margin:0;
+	border:1px solid #95BAE9;
+	background-color:#E1EEFE;
+	overflow:hidden;
+}
+.contentModuleB{
+	margin:1px;
+	width:99.7%;
+	background-color:#fff;
+}
+.contentModuleB1{
+	margin:1px;
+	width:99.7%;
+	background-color:#fff;
+}
+.contentModuleB td{
+	padding-left:4px;
+}
+.contentModuleB th{
+	padding:2px 0px 0px 4px;
+	background-color:#D9EBFF;
+	font-size:12px;
+	color:#0033CC;
+	font-weight:normal;
+}
+.contentTd{
+	border-right:1px solid #ffffff;
+	border-bottom:1px solid #ffffff;
+}
+.contentTdNone{
+	border-bottom:1px solid #ffffff;
+}
+
+/* 表格上部按钮位置 */
+.buttPosition{
+	padding-right:20px;
+}
+
+/* 表格内部蓝条 */
+.contentModuleB.blue{
+	padding-left:15px;
+}
+
+/* 交替显示 */
+.DoubleColorTable tr{background-color:expression("#F5F5F5,#FFFFFF,".split(",")[rowIndex%2]);font-size: 12px;line-height:24px;border:0; cellpadding:0; cellspacing:0;}
+
+
+/*--------------------- 弹出页面样式---------------------- */
+.popSpace{
+	margin-top:14px;
+}
+.popTPosition{
+	padding-right:100px;
+}

@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+*{ margin: 0;padding: 0; }
+ol, ul{ list-style: none }
+.plugSchoolListWrap{ position: absolute;z-index:99;width: 418px;border: 1px solid #ccc;font-size: 12px;display: none;background: #fff  }
+.plugSchoolListWrap ul{ width: 418px;float: left; }
+.plugSchoolListWrap li{height:28px;font-size: 14px; line-height: 28px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;padding: 0 8px;cursor: pointer;word-wrap: normal }
+/*.liHover{ background: url("http://cimg.zhaopin.cn/img/js_select.png") repeat-x;height:28px;color: #fff;  }*/
+.liHover{ background:#efedeb;height:28px;}
+.noSchool{ text-align: center;margin: 10px 0;display: none }
+.plugiframe{ opacity:0;filter:Alpha(opacity=0);width: 418px;position: absolute;top:0;left: 0;z-index: -1 }
+.sCP_title small{display: inline-block;font-size: 14px;font-weight: normal;margin-left: 14px;}

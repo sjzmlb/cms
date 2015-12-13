@@ -1,0 +1,69 @@
+@CHARSET "UTF-8";
+body{ font-family:tahoma,helvetica,arial,'bitstream vera sans',sans-serif; font-size:14px;}
+.sCP_Wrap{ width: 890px;  border:#e5e5e5 1px solid;}
+.sCP_mainWrap{ padding:20px 10px 9px 40px;font-family:'寰蒋闆呴粦'; background:#fff;  }
+.selectCityPop{ display:none; opacity:0; filter:alpha(opacity=0);}
+
+.sCP_title{ background: #e5e5e5;height: 38px;line-height: 38px;padding-left:20px;font-size: 16px;  font-family:'寰蒋闆呴粦'; font-weight:bold; position:relative; }
+.sCP_title a{ top: 2px; right: 10px; position: absolute; width: 14px; height: 14px; background: url("http://img01.zpin.net.cn/2014/c/img/creat_resume/icon_close.jpg") no-repeat scroll 0px 0px transparent; }
+.sCP_title a:hover{ text-decoration:none;}
+.sCP_allBtn{ color: #333;float: left;padding: 6px 20px; font-weight: bold; cursor:pointer; border:1px solid #e5e5e5; border-bottom: 1px solid #fff; margin-bottom: -1px}
+.sCP_setionTitle{ padding: 18px 0px; color: #000; font-weight: bold;font-size: 14px; font-family:'寰蒋闆呴粦'; }
+.sCP_setionContent{ width: 100% }
+.sCP_setionContent li{ float: left;text-align: left;cursor: pointer;width: 120px;height: 25px;line-height: 25px;margin-bottom: 5px }
+.sCP_tab li{ margin-left: 5px; color: #FFF; float: left; padding: 6px 20px 7px; border-bottom: medium none; background-color: #00A3ED; cursor:pointer;height:20px;}
+.sCP_dpn{ display: none }
+.sCP_list li{  text-align: left;float: left;cursor: pointer;height: 26px;line-height: 26px;margin-bottom:10px; width: 164px; }
+.sCP_setionContent img{ display: none }
+.sCP_Wrap li img{ vertical-align: top ;margin-left: 1px; display: none ;float:left;}
+.sCP_setionContent li span, .sCP_list li span{ height:26px; text-align:left; padding:0 15px; color:#68A6FE;  }
+.sCP_setionContent li span, .sCP_list li span{ padding:0px; display: inline-block; line-height: 26px;padding:0 5px; float:left;}
+.sCP_setionContent li span.hover, .sCP_list li span.hover{ color:#fff; background:#84d4f9;  }
+.j_province li span{   padding:0px 5px 0px;}
+.j_province li span.hover{ background:#84d4f9;}
+.sCP_title small{font-size: 14px;margin-left: 12px;display: inline-block;font-weight: normal;}
+.sCP_HK{ margin: 20px 0; cursor: pointer;width: 810px;color: #000;font-weight: bold;font-size: 14px; font-family:'寰蒋闆呴粦'; border-bottom:#ccc 1px dashed;  padding-bottom:20px; padding-top:0;}
+.sCP_HK span.active{ background:#84d4f9; }
+.sCP_HK a{ font-weight: bold;font-size: 14px; font-family:'寰蒋闆呴粦'; color: #000;}
+.sCP_selectedTitle{ float: left;margin-right: 10px;font-size: 14px; font-family:'寰蒋闆呴粦'; font-weight:bold; }
+.sCP_selectedCity{ float: left;  
+max-width: 730px;}
+.sCP_selectedCity li{*white-space:nowrap;color:#68A6FE; border: 1px solid #00A3ED; background-color: #FFF; height: 23px; line-height: 23px; display:block;
+	float: left; padding-left:10px;margin-right: 4px;margin-bottom: 6px;}
+
+.j_surebtn,.j_closebtn{ display: inline-block; line-height: 37px; text-align: center; color: #FFF; width: 125px; height: 39px; border-radius: 5px;
+font-size: 20px; font-family:'寰蒋闆呴粦'; cursor:pointer; margin-top: 10px;}
+.j_surebtn{ background:#FFA317;margin-left:20px; }
+.j_closebtn{background:#04A3ED; margin-left:290px; }
+.addDiv{padding: 10px 0px;width:840px;height:26px;}
+.j_tabProvince h3{ color: #000; font-weight: bold;float:left;height:26px;line-height: 26px;padding:0 10px;}
+.j_tabArea h3{ color: #000; font-weight: bold;float:left;height:26px;line-height: 26px;padding:0 10px;}
+.j_tabContent{    border-bottom: 1px dashed #ccc; margin-bottom:10px; height: 386px;}
+.j_tabProvince li span{ width:auto; padding:0px 8px 0px; }
+.j_tabProvince li span.hover{ background:#84d4f9;}
+.sCP_mainWrap li span.active{ background:#84d4f9;color: #fff }
+.closeCity {  vertical-align:bottom; width: 20px; height: 23px; display: inline-block; background: url("http://img01.zpin.net.cn/2014/c/img/creat_resume/icon_close01.jpg") no-repeat scroll center center #00A3ED; margin-left:10px;  cursor:pointer;}
+.j_tabHK{ padding-top:20px;}
+
+.j_tabHKCon li span{ padding:3px 15px 4px 15px;}
+.j_tabHKCon li span.hover{ background:#84d4f9; color:#fff;}
+
+
+/*鍏叡*/
+.wid780{ width: 780px; border-bottom: 1px solid #e5e5e5;}
+.sCP_list {height:330px;overflow-y:auto }
+.sCP_list li.listsp{ width: 334px;}
+.style_en .sCP_list li.listsp{width: 320px;}
+/*鑻辨枃鍩� 甯�*/
+.style_en .sCP_mainWrap{ padding:20px 14px 9px 28px;font-family:'寰蒋闆呴粦'; background:#fff;}
+.style_en  ul.sCP_setionContent li{ float: left;text-align: left;cursor: pointer;width: 166px;height: 25px;line-height: 25px;margin-bottom: 5px }
+.sCP_tab li.nocurrent{ background-color: #fff; color: #2f2f2f; font-weight:bold; border:1px solid #e5e5e5; border-bottom: none;}
+.style_en  .j_tabContent{    border-bottom: 1px dashed #ccc; margin-bottom:10px; height: 386px; overflow: auto; overflow-x:hidden; }
+.style_en .sCP_list li{  text-align: left;float: left;cursor: pointer;height: 26px;line-height: 26px;margin-bottom:10px; width: 160px; }
+
+.j_errorTips{display:block;background:#ff5e5e;padding:0 8px;height:25px;line-height: 25px;text-align: center;color:#fff;border-radius: 3px;float:left;min-width:82px;}
+.j_tabProvince h3{color:#68A6FE;padding-left: 8px;cursor: pointer;}
+.j_tabProvince h3:hover,.j_tabProvince h3.active{background:#84d4f9;color:#fff;}
+.j_tabHKCon {max-height:340px;overflow-y:auto }
+.j_tabArea h3{color:#68A6FE;padding-left: 8px;cursor: pointer;}
+.j_tabArea h3:hover,.j_tabArea h3.active{background:#84d4f9;color:#fff;}

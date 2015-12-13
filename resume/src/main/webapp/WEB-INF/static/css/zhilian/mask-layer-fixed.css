@@ -1,0 +1,6 @@
+@CHARSET "UTF-8";
+/*遮罩*/
+.global-mask-container,.part-mask-container{z-index: 200 ; position: absolute ;left: 0px ; top: 0px ;opacity: 0.5 ;background-color: #ACACAC;filter: alpha(opacity=50);  }
+.part-mask-container{z-index: 300 ;}
+.global-mask-content,.part-mask-content{visibility: visible ;position: fixed; z-index: 201 ;}
+.part-mask-content{width : 315px;text-align : center;padding-bottom : 30px;background: url(http://img01.zhaopin.cn/2014/rd2/img/sysLoading.gif) no-repeat scroll 0 bottom; z-index: 301 ;}
