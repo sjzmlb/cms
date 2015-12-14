@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.sishuok.architecture1.customermgr.vo.CustomerModel" alias="CM"/>
+		<typeAlias type="com.sishuok.architecture1.customermgr.vo.CustomerQueryModel" alias="CQM"/>
+	</typeAliases>
+	<plugins>
+		<plugin interceptor="com.sishuok.pageutil.PagePlugin">
+			<property name="dialect" value="mysql"/>
+			<property name="pageSqlId" value=".*Page.*"/>
+		</plugin>
+	</plugins>
+</configuration> 
