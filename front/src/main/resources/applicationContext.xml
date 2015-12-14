@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xmlns:aop="http://www.springframework.org/schema/aop"
+		xmlns:tx="http://www.springframework.org/schema/tx"
+		xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+		"
+		>
+	<context:component-scan base-package="com.sishuok">
+		<context:exclude-filter type="annotation"
+			expression="org.springframework.stereotype.Controller" />
+	</context:component-scan>	
+
+	<aop:aspectj-autoproxy proxy-target-class="true"/> 
+	<tx:annotation-driven transaction-manager="transactionManager"	proxy-target-class="true" />
+	
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>		 
+	<bean name="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+		<property name="driverClassName">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:mysql://localhost:3306/arch1?useUnicode=true&amp;characterEncoding=UTF-8
+			</value>
+		</property>
+		<property name="username">
+			<value>root</value>
+		</property>
+		<property name="password" value="cc" />
+	</bean>
+	
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation" value="classpath:MybatisConf.xml"/>
+		<property name="mapperLocations" value="classpath:mapper/**/*Mapper.xml" />
+	</bean>
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.sishuok" />
+		<property name="annotationClass" value="org.springframework.stereotype.Repository"></property>
+	</bean>
+	
+	<!--memcached 客户端 SocketPool-->    
+    <bean id="memcachedPool" class="com.danga.MemCached.SockIOPool" factory-method="getInstance" 
+    init-method="initialize" destroy-method="shutDown">      
+        <constructor-arg><value>neeaMemcachedPool</value></constructor-arg>  
+	        <property name="servers">    
+	            <list>    
+	                <value>192.168.1.106:2222</value>	                
+	            </list>    
+	        </property>    
+	        <property name="weights">
+	        	<list>    
+		            <value>1</value>
+		        </list>    
+	        </property>
+	        <property name="initConn">    
+	            <value>5</value>    
+	        </property>    
+	        <property name="minConn">    
+	            <value>5</value>    
+	        </property>
+		        <property name="maxConn">    
+	            <value>250</value>    
+	        </property>    
+	        <property name="maintSleep">    
+	            <value>30</value>    
+	        </property>    
+	        <property name="nagle">    
+	            <value>false</value>    
+	        </property>    
+	        <property name="maxIdle">    
+	            <value>6000</value>    
+	        </property>    
+	        <property name="socketTO">    
+	            <value>3000</value>    
+	        </property>    
+	    </bean>  	        
+	    <!--memcached client-->    
+	    <bean id="memCachedClient" class="com.danga.MemCached.MemCachedClient">    
+	        <constructor-arg>    
+	            <value>neeaMemcachedPool</value>    
+	        </constructor-arg>   
+	    </bean>
+ </beans>

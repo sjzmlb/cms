@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>    
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.sishuok.architecture1.ordermgr.dao.OrderDetailDAO">  
+     <insert id="create" parameterType="ODM">
+     	insert into tbl_orderDetail (orderUuid,goodsUuid,orderNum,price,money,saveMoney) 
+     	 values(#{orderUuid},#{goodsUuid},#{orderNum},#{price},#{money},#{saveMoney})
+     </insert>
+     <update id="update" parameterType="ODM">
+     	update tbl_orderDetail set orderUuid=#{orderUuid},goodsUuid=#{goodsUuid},orderNum=#{orderNum},price=#{price},money=#{money},saveMoney=#{saveMoney}
+     	   	where uuid=#{uuid}
+     </update>
+     <delete id="delete" parameterType="int">
+     	delete from tbl_orderDetail where uuid=#{uuid}
+     </delete>
+     
+    <select id="getByUuid" parameterType="int" resultType="ODM">  
+        select * from tbl_orderDetail where uuid=#{uuid}
+    </select>  
+    <select id="getByConditionPage" parameterType="ODQM" resultType="ODM">  
+        select * from tbl_orderDetail
+        <where>
+        	<if test="uuid!=null &amp;&amp; uuid > 0">
+        		and uuid=#{uuid}
+        	</if>  
+        	
+        </where>
+    </select> 
+</mapper>

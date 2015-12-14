@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>    
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.sishuok.architecture1.customermgr.dao.CustomerDAO">  
+	
+	<cache type="org.mybatis.caches.ehcache.EhcacheCache"/>
+	
+     <insert id="create" parameterType="CM">
+     	insert into tbl_customer (customerId,pwd,showName,trueName,registerTime) 
+     	 values(#{customerId},#{pwd},#{showName},#{trueName},#{registerTime})
+     </insert>
+     <update id="update" parameterType="CM">
+     	update tbl_customer set customerId=#{customerId},pwd=#{pwd},
+     		showName=#{showName},trueName=#{trueName},registerTime=#{registerTime} 
+     	  	where uuid=#{uuid}
+     </update>
+     <delete id="delete" parameterType="int">
+     	delete from tbl_customer where uuid=#{uuid}
+     </delete>
+     
+     <select id="getByCustomerId" parameterType="String" resultType="CM"> 
+        select * from tbl_customer where customerId=#{customerId}
+    </select>
+    
+    <select id="getByUuid" parameterType="int" resultType="CM">  
+        select * from tbl_customer where uuid=#{uuid}
+    </select>  
+    <select id="getByConditionPage" parameterType="CQM" resultType="CM">  
+        select * from tbl_customer
+        <where>
+        	<if test="uuid!=null &amp;&amp; uuid > 0">
+        		and uuid=#{uuid}
+        	</if>  
+        	<if test="customerId!=null &amp;&amp; customerId!=''">
+        		and customerId=#{customerId}
+        	</if>
+        	<if test="showName!=null &amp;&amp; showName!=''">
+        		and showName=#{showName}
+        	</if>
+        </where>
+    </select> 
+</mapper>

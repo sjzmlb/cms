@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>    
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sishuok.architecture1.filemgr.dao.FileDAO">
+	 <insert id="create" parameterType="FileM">
+     	insert into tbl_file (fileName,remotePaths)
+     	 values(#{fileName},#{remotePaths})
+     </insert>
+     <update id="update" parameterType="FileM">
+     	update tbl_file set fileName=#{fileName},remotePaths=#{remotePaths}
+     	    where uuid=#{uuid}
+     </update>
+     <delete id="delete" parameterType="int">
+     	delete from tbl_file where uuid=#{uuid}
+     </delete>
+     
+    <select id="getByUuid" parameterType="int" resultType="FileM">  
+        select * from tbl_file where uuid=#{uuid}
+    </select>  
+    <select id="getByConditionPage" parameterType="FileQM" resultType="FileM">  
+        select * from tbl_file
+        <where>
+        	<if test="uuid!=null &amp;&amp; uuid > 0">
+        		and uuid=#{uuid}
+        	</if>  
+        	<if test="fileName!=null &amp;&amp; fileName!=''">
+        		and fileName=#{fileName}
+        	</if> 
+        </where>
+    </select> 
+</mapper>
