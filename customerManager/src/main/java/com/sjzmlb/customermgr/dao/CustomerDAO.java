@@ -1,11 +1,10 @@
-package customermgr.dao;
+package com.sjzmlb.customermgr.dao;
 
 import org.springframework.stereotype.Repository;
 
 import com.sjzmlb.common.dao.BaseDAO;
-
-import customermgr.vo.CustomerModel;
-import customermgr.vo.CustomerQueryModel;
+import com.sjzmlb.customermgr.vo.CustomerModel;
+import com.sjzmlb.customermgr.vo.CustomerQueryModel;
 
 @Repository
 public interface CustomerDAO extends BaseDAO<CustomerModel,CustomerQueryModel>{

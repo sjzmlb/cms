@@ -1,9 +1,8 @@
-package customermgr.service;
+package com.sjzmlb.customermgr.service;
 
 import com.sjzmlb.common.service.IBaseService;
-
-import customermgr.vo.CustomerModel;
-import customermgr.vo.CustomerQueryModel;
+import com.sjzmlb.customermgr.vo.CustomerModel;
+import com.sjzmlb.customermgr.vo.CustomerQueryModel;
 
 public interface ICustomerService extends IBaseService<CustomerModel, CustomerQueryModel>{
 	public CustomerModel getByCustomerId(String customerId);

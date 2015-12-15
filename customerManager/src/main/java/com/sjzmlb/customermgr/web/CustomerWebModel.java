@@ -1,4 +1,4 @@
-package customermgr.web;
+package com.sjzmlb.customermgr.web;
 
 import com.sjzmlb.common.web.BaseWebModel;
 

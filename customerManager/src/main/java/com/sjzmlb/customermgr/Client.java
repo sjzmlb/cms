@@ -1,4 +1,4 @@
-package customermgr;
+package com.sjzmlb.customermgr;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -6,11 +6,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.sjzmlb.customermgr.service.ICustomerService;
+import com.sjzmlb.customermgr.vo.CustomerModel;
+import com.sjzmlb.customermgr.vo.CustomerQueryModel;
 import com.sjzmlb.pageutil.Page;
-
-import customermgr.service.ICustomerService;
-import customermgr.vo.CustomerModel;
-import customermgr.vo.CustomerQueryModel;
 
 @Service
 @Transactional

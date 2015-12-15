@@ -1,4 +1,4 @@
-package customermgr.vo;
+package com.sjzmlb.customermgr.vo;
 
 import com.sjzmlb.common.vo.BaseModel;
 

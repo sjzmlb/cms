@@ -1,4 +1,4 @@
-package customermgr.web;
+package com.sjzmlb.customermgr.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,13 +9,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.sjzmlb.customermgr.service.ICustomerService;
+import com.sjzmlb.customermgr.vo.CustomerModel;
+import com.sjzmlb.customermgr.vo.CustomerQueryModel;
 import com.sjzmlb.pageutil.Page;
 import com.sjzmlb.util.format.DateFormatHelper;
 import com.sjzmlb.util.json.JsonHelper;
-
-import customermgr.service.ICustomerService;
-import customermgr.vo.CustomerModel;
-import customermgr.vo.CustomerQueryModel;
 
 @Controller
 @RequestMapping(value="/customer")

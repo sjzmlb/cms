@@ -1,14 +1,13 @@
-package customermgr.service;
+package com.sjzmlb.customermgr.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.sjzmlb.common.service.BaseService;
-
-import customermgr.dao.CustomerDAO;
-import customermgr.vo.CustomerModel;
-import customermgr.vo.CustomerQueryModel;
+import com.sjzmlb.customermgr.dao.CustomerDAO;
+import com.sjzmlb.customermgr.vo.CustomerModel;
+import com.sjzmlb.customermgr.vo.CustomerQueryModel;
 
 @Service
 @Transactional

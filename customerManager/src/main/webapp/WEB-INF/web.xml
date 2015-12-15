@@ -5,7 +5,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
             http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 
-    <display-name>customerManager</display-name>
+    <display-name>customer</display-name>
 
     <!-- Spring配置文件开始  -->
      <context-param>
