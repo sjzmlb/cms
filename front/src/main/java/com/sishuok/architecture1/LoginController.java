@@ -8,9 +8,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-
-import customermgr.service.ICustomerService;
-import customermgr.vo.CustomerModel;
+import com.sjzmlb.customermgr.service.ICustomerService;
+import com.sjzmlb.customermgr.vo.CustomerModel;
 
 @Controller
 @RequestMapping("/")

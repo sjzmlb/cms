@@ -2,21 +2,13 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.sishuok.architecture1.customermgr.vo.CustomerModel" alias="CM"/>
-		<typeAlias type="com.sishuok.architecture1.customermgr.vo.CustomerQueryModel" alias="CQM"/>
-		<typeAlias type="com.sishuok.architecture1.goodsmgr.vo.GoodsModel" alias="GM"/>
-		<typeAlias type="com.sishuok.architecture1.goodsmgr.vo.GoodsQueryModel" alias="GQM"/>
-		<typeAlias type="com.sishuok.architecture1.cartmgr.vo.CartModel" alias="CartM"/>
-		<typeAlias type="com.sishuok.architecture1.cartmgr.vo.CartQueryModel" alias="CartQM"/>
-		<typeAlias type="com.sishuok.architecture1.ordermgr.vo.OrderModel" alias="OM"/>
-		<typeAlias type="com.sishuok.architecture1.ordermgr.vo.OrderQueryModel" alias="OQM"/>
-		<typeAlias type="com.sishuok.architecture1.ordermgr.vo.OrderDetailModel" alias="ODM"/>
-		<typeAlias type="com.sishuok.architecture1.ordermgr.vo.OrderDetailQueryModel" alias="ODQM"/>
-		<typeAlias type="com.sishuok.architecture1.storemgr.vo.StoreModel" alias="StoreM"/>
-		<typeAlias type="com.sishuok.architecture1.storemgr.vo.StoreQueryModel" alias="StoreQM"/>
+		<typeAlias type="com.sjzmlb.customermgr.vo.CustomerModel" alias="CM"/>
+		<typeAlias type="com.sjzmlb.customermgr.vo.CustomerQueryModel" alias="CQM"/>
+		<typeAlias type="com.sjzmlb.cms.resume.vo.ResumeModel" alias="RM"/>
+		<typeAlias type="com.sjzmlb.cms.resume.vo.ResumeQueryModel" alias="RQM"/>
 	</typeAliases>
 	<plugins>
-		<plugin interceptor="com.sishuok.pageutil.PagePlugin">
+		<plugin interceptor="com.sjzmlb.pageutil.PagePlugin">
 			<property name="dialect" value="mysql"/>
 			<property name="pageSqlId" value=".*Page.*"/>
 		</plugin>
