@@ -32,7 +32,7 @@
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<stopPort>9999</stopPort>
 					<webAppConfig>
-						<contextPath>/resume</contextPath>
+						<contextPath>/</contextPath>
 					</webAppConfig>
 					<connectors>
 						<connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">

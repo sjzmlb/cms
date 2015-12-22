@@ -38,7 +38,7 @@
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<stopPort>9999</stopPort>
 					<webAppConfig>
-						<contextPath>/customer</contextPath>
+						<contextPath>/</contextPath>
 					</webAppConfig>
 					<connectors>
 						<connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
