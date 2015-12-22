@@ -11,7 +11,7 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
 		"
 		>
-	<context:component-scan base-package="com.sishuok">
+	<context:component-scan base-package="com.sjzmlb">
 		<context:exclude-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>	
@@ -28,7 +28,7 @@
 			<value>com.mysql.jdbc.Driver</value>
 		</property>
 		<property name="url">
-			<value>jdbc:mysql://localhost:3306/arch1?useUnicode=true&amp;characterEncoding=UTF-8
+			<value>jdbc:mysql://localhost:3306/resumeManager?useUnicode=true&amp;characterEncoding=UTF-8
 			</value>
 		</property>
 		<property name="username">
@@ -43,7 +43,7 @@
 		<property name="mapperLocations" value="classpath:mapper/**/*Mapper.xml" />
 	</bean>
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.sishuok" />
+		<property name="basePackage" value="com.sjzmlb" />
 		<property name="annotationClass" value="org.springframework.stereotype.Repository"></property>
 	</bean>
 	

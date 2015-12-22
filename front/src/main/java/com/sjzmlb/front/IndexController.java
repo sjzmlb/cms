@@ -1,4 +1,4 @@
-package com.sishuok.architecture1;
+package com.sjzmlb.front;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

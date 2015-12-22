@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>    
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sjzmlb.cms.resume.dao.ResumeDAO">
+
+	<cache type="org.mybatis.caches.ehcache.EhcacheCache" />
+
+	<insert id="create" parameterType="RM">
+		insert into tbl_customer
+		(customerId,pwd,showName,trueName,registerTime)
+		values(#{customerId},#{pwd},#{showName},#{trueName},#{registerTime})
+	</insert>
+	<update id="update" parameterType="RM">
+		update tbl_customer set
+		customerId=#{customerId},pwd=#{pwd},
+		showName=#{showName},trueName=#{trueName},registerTime=#{registerTime}
+		where uuid=#{uuid}
+	</update>
+	<delete id="delete" parameterType="int">
+		delete from tbl_customer where
+		uuid=#{uuid}
+	</delete>
+
+	<select id="getByCustomerId" parameterType="String" resultType="RM">
+		select * from tbl_customer where customerId=#{customerId}
+	</select>
+
+	<select id="getByUuid" parameterType="int" resultType="RM">
+		select *
+		from tbl_customer where uuid=#{uuid}
+	</select>
+	<select id="getByConditionPage" parameterType="RQM" resultType="RM" useCache="false">
+		select * from resume where 1=1
+	</select>
+</mapper>
